@@ -1,0 +1,595 @@
+/*==================================
+
+Template name: Axith
+Author: Cj
+Created: March 20, 2016
+Version: 1.0
+
+====================================
+
+CSS style structure
+
+1.General
+2.Banner
+3.Navigation
+4.About Section
+5. Feature Section
+6. Services Section
+7. Video Section
+8. Portfolio Section
+9. Team Section
+10. Latest News Section
+11. Parallax Section
+12. Get in touch section
+13. Message Section
+14. Map Section
+15. Scrollup Section
+
+
+*/
+
+/*General*/
+
+html{
+	width: 100%;
+	overflow-x: hidden;
+}
+body{
+	color: #767676;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+}
+.top-margin {
+	margin-top: 96px;
+}
+.bottom-margin {
+	margin-bottom: 96px;
+}
+.p {
+	font: normal 16px "Myriad Pro", arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 { color: #767676;}
+
+h1 {
+	font-size: 48px;
+	line-height: 50px;
+	font-weight: 600;
+	font-family: "Myriad Pro", sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 38px;
+	font-weight: 600;
+	font-family: "Myriad Pro", sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 600;
+	font-family: "Myriad Pro", sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 600;
+	font-family: "Myriad Pro", sans-serif;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 600;
+	font-family: "Myriad Pro", sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	text-decoration: none;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 600;
+	font-family: "Myriad Pro", sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	text-decoration: none;
+}
+
+.btn {
+	border: 1px solid #fff;
+	display: inline-block;
+	min-width: 160px;
+	padding: .9em;
+	height: 50px;
+	text-align: center;
+	color: #fff;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.btn:hover {
+	background-color: #f79b23;
+	color: #fff;
+	text-decoration: none;
+}
+
+.center-content {
+	text-align: center;
+}
+
+p.description{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 34px;
+	padding-bottom: 48px;
+}
+
+#bgimage {
+		width: 100%;
+		min-height: 670px;
+		text-align: left;
+		position: relative;
+}
+
+#bgimage .logo {
+	padding-top: 40px;
+}
+
+#bgimage .heading-text {
+	padding-top: 30px;
+}
+#bgimage .heading-text h4{
+	color: #fff;
+}
+
+#bgimage .border {
+	padding-bottom: 10px;
+}
+
+#bgimage.header-image {
+	background-image: url(../images/header-image.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	overflow: hidden;
+}
+
+#bgimage .mainheading{
+	width: 55%;
+	margin-top: 72px;
+	color: #fff !important;
+}
+
+#bgimage .main-heading span {
+	display: block;
+	color: #1ac930;
+}
+
+#bgimage.header-image h1:after {
+	border-top: 2px solid #fff;
+	display: block;
+	width: 120px;
+	margin: 30px 0;
+	content: ""
+}
+
+#bgimage.header-image p {
+	width: 50%;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.green-btn {
+	background: #1ac930;
+	border: none;
+	margin-left: 10px;
+}
+
+.green-btn:hover {
+	background-color: #1ac930;
+	color: #fff;
+	text-decoration: none;
+}
+
+.scrolldown {
+	padding-top: 24px;
+}
+
+#bgimage .scroll_btn {
+	background: url(../images/scroll.gif) 50% 50% no-repeat rgba(215, 181, 94, 0);
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	display: block;
+	height: 45px;
+	margin: 42px auto;
+	-webkit-transition: all 500ms ease-in-out 0s;
+	-moz-transition: all 500ms ease-in-out 0s;
+	-ms-transition: all 500ms ease-in-out 0s;
+	-o-transition: all 500ms ease-in-out 0s;
+	transition: all 500ms ease-in-out 0s;
+	width: 45px;
+}
+
+#bgimage .scroll_btn:hover {
+	background: url(../images/scroll.gif) 50% 50% no-repeat #E03561;
+	opacity: .85;
+	-moz-opacity: .85;
+	-o-opacity: .85;
+	-webkit-opacity: .85;
+	transfrom: scale(1.3);	
+	-webkit-transfrom: scale(1.3);
+	-o-transfrom: scale(1.3);
+	-moz-transfrom: scale(1.3);
+}
+
+/*navbar section*/
+.main-menu {
+	background-color: #fff;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+
+.main-menu.tiny {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+	top: 0; left: 0;right: 0;z-index: 300;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.main-menu.tiny .navbar-top {
+	display: none;
+}
+
+.main-manu .navbar-nav > li > a {
+	padding: 20px 13px 10px 13px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #666;
+	border-bottom: 3px solid transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #E03561;
+}
+
+
+.main-menu .navbar-nav > li > a:hover {
+	color: #E03561;
+}
+
+.main-menu .navbar-nav > .active > a, .main-menu .navbar-nav > .active > a:hover, .main-menu .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #E03561;
+	border-bottom: 3px solid #E03561;
+}
+
+.main-menu .navbar-nav > li:first-child.active > a {
+	color: #666;
+	background-color: transparent;
+	border-bottom: 3px solid transparent;
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0px;
+	border: none;
+}
+
+/*about us section*/
+#about{
+	padding-top: 0px;
+}
+#about .title {
+	margin: 0;
+}
+#about .about-info .media{
+	padding-top: 30px;
+}
+#about .about-info .media:last-child{
+	margin-bottom: 0;
+}
+#about .media .rect-pink{
+	background-color: #1ac930;
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 24px;
+	text-align: center;
+}
+#about .media .fa{
+	padding-top: 22px;
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+}
+#about-info .media .content h4{
+	text-align: none;
+	margin-top: 0;
+}
+#about-info .media .content p{
+	padding-top: 10px;
+	text-align: none;
+	display: block;
+}
+#about-info .media .content p:last-child{
+	margin: 0;
+}
+#about p.chose-text{
+	padding-top: 10px;
+}
+.skillbar{
+	background: #EFEFEF;
+	display: block;
+	height: 15px;
+	margin-bottom: 64px;
+	top: 64px;
+	position: relative;
+	transition-delay: 0s;
+	transition-duration: .4s;
+	transition-property: width, background-color;
+	transition-timing-function: linear;
+	width: 100%;
+}
+.skillbar-title{
+	color: #323232;
+	font-size: 14px;
+	left: 0;
+	position: absolute;
+	top: -50px;
+}
+.skillbar-title span{
+	display: block;
+	float: right;
+	margin-left: 75px;
+	margin-top: -30px;
+	font-size: 12px;
+}
+.skillbar-bar.blue{
+	background-color: #1ac930;
+	height: 18px;
+	width: 0;
+}
+
+/*features section*/
+#features img{
+	width: 388px;
+	height: 531px;
+}
+#features p{
+	margin-top: 48px;
+}
+#features h4{
+	margin: 0;
+}
+#features h5{
+	text-transform: none;
+	padding-bottom: 5px;
+}
+#features .check-symbol{
+	width: 32px;
+	height: 32px;
+}
+#features span.feature-text{
+	padding-left: 30px;
+}
+#features .feature-img{
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+/*Services section*/
+#services {
+	top:200px;
+}
+#services h5{
+	text-transform: none;
+	padding-bottom: 5px;
+}
+#services img{
+	padding-bottom: 24px;
+}
+
+/*video section*/
+#video {
+	background: url(../images/video.jpg) 0 0 no-repeat;
+	width: 100%;
+	background-size: cover;
+	padding-top: 86px;
+	padding-bottom: 86px;
+	margin-top: 48px;
+	min-height: 550px;
+}
+#video .icon{
+	margin-top: 130px;
+}
+
+
+/*portfolio section*/
+#portfolio{
+	background: #fff;
+	text-align: center;
+	clear: both;
+	top: 50px;
+}
+#portfolio h2{
+	margin-bottom: 48px;
+}
+#portfolio h5{
+	padding-bottom: 5px;
+}
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+}
+.grid .gridItem{
+	padding-left: 1px;
+	padding-right: 1px;
+	margin-bottom: 2px;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	max-height: 350px;
+	width: 100%;
+	background: #282B2D;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h4 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h4 span {
+	font-weight: 800;
+}
+
+.grid figure h4,
+.grid figure p {
+	margin: 0;
+}
+
+
+/* Individual effects */
+
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+}
+figure.effect-lily h4{
+	color:#1ac930;
+	text-transform: none;
+}
+
+figure.effect-lily h4,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,30px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h4 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h4,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+figure img{
+	width: 427px;
+	height: 246px;
+}
