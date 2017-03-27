@@ -593,3 +593,274 @@ figure img{
 	width: 427px;
 	height: 246px;
 }
+
+
+/*Team section*/
+#team{
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+#team .container{
+	position: relative;
+	z-index: 1;
+}
+#team h5{
+	padding-bottom: 5px;
+}
+.team-item{
+	max-width: 300px;
+	margin: auto;
+}
+.team-item img{
+	transform: scale(1.1,1.1);
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.team-item:hover img{
+	transform: scale(1,1);
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+}
+.teamwrapper{
+	position: relative;
+	overflow: hidden;
+	background: #000;
+}
+.team-overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.team-inner{
+	padding: 50px 15px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+.team-inner h4{
+	position: relative;
+	color: #fff;
+	margin: 0px;
+	text-align: right;
+	text-transform: none;
+}
+.team-inner h4 strong{
+	width: 100%;
+	display: inline-block;
+}
+.team-inner h4 span{
+	font-size: 11px;
+	font-weight: 400;
+	display: block;
+	margin-top: 5px;
+}
+.owl-dots{
+	margin-top: 48px;
+}
+
+/*Latest News section*/
+
+#news{
+	padding: 100px 0px;
+	background: #f4f4f4;
+	text-align: center;
+}
+#news .text-right{
+	text-align: right;
+	margin-left: 0px;
+}
+.newsImage{
+	padding: 50px;
+	margin-bottom: 48px;
+}
+.newsImage.news1{
+	background: url("../images/blog/blog1.jpg") left center no-repeat;
+}
+.newsImage.news2{
+	background: url("../images/blog/blog2.jpg") right center no-repeat;
+}
+.newsImage.news3{
+	background: url("../images/blog/blog3.jpg") left center no-repeat;
+}
+.newsWrapper{
+	border: 4px solid #e4e4e4;
+	padding: 40px;
+	margin: 0px;
+	text-align: left;
+}
+.newsWrapper a{
+	text-decoration: none;
+}
+.newsDate{
+	background: #e0356e;
+	display: inline-block;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.newsDate h2{
+	color: #fff;
+}
+.newsWrapper h4{
+	margin-top: 24px;
+	text-transform: none;
+}
+.newsDate span{
+	font-size: 18px;
+	font-weight: 300;
+	padding-left: 24px;
+	color: #fff;
+}
+a.newsLink:hover h2, .newsLink:focus h2{
+	color: #fff;
+}
+.postedBy{
+	display: block;
+	border-top: 1px dashed #ccc;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+/*Banner section*/
+section.module-black.myparallax{
+	background-color: black;
+	min-height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.module-black .content h2{
+	color: #fff;
+}
+.module-black p{
+	color: #fff;
+}
+.img-overlay{
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+section.module-black .button{
+	margin-top: 48px;
+}
+
+/*Get in touch section*/
+
+#contact .contact-info p{
+	margin: 0;
+	font-size: 14px;
+}
+#contact .contact-info h5{
+	margin-bottom: 14px;
+}
+#contact .social .left-margin{
+	margin-left: 10px;
+}
+#contact .social img{
+	width: 32px;
+	height: 32px;
+}
+.contact-top{
+	margin-bottom: 72px;
+}
+
+/*Message section*/
+
+#message{
+	background: #d7d7d7;
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+.send{
+	padding-left: 24px;
+}
+#message h2{
+	color: #e0356e;
+	padding-bottom: 24px;
+}
+#message .form-group .form-control{
+	padding: 25px;
+}
+#message .pink-btn{
+	background: #e0356e;
+	border: none;
+	margin-left: 10px;
+	text-transform: none;
+	margin-top: 24px;
+}
+#message .pink-btn:hover{
+	background-color: #f79b23;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Map section*/
+.map .map-heading, .copyright-bg{
+	background: #000;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.map .map-heading h5{
+	color: #fff;
+	text-transform: none;
+}
+.copyright p{
+	color: #fff;
+}
+#map{
+	width: 100%;
+	height: 450px;
+}
+
+/*Scrollup section*/
+
+.scrollup{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	opacity: .3;
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #000;
+	z-index: 10;
+	transition: opacity .5s, background-color .5s;
+	-moz-transition: opacity .5s, background-color .5s;
+	-webkit-transition: opacity .5s, background-color .5s;
+}
+.scrollup:hover{
+	background: #E03561;
+	opacity: 1;
+}
+.scrollup i{
+	font-size: 10px;
+	position: absolute;
+	opacity: 1;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-top: -7px;
+	margin-left: -5px;
+	text-decoration: none;
+}
