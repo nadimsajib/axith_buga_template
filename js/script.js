@@ -10,6 +10,52 @@ $(document).ready(function(){
 		offset: 160
 	});
 
+
+    <!-- ============================-->
+    <!-- =====   scrollTop.js    ====-->
+    <!-- ============================-->
+
+    $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0}, 2000);
+        return false;
+    });
+
+	<!-- ============================-->
+	<!-- =====  scrolldown.js    ====-->
+	<!-- ============================-->
+
+	$('.scrolldown a').bind('click',function(){
+		$("html, body").stop().animate({
+			scrollTop: $($(this).attr('href')).offset().top - 160
+		}, 1500, 'easeInOutExpo');
+		event.preventDefault();
+	});
+
+	<!-- ============================-->
+	<!-- =====  navbardown.js    ====-->
+	<!-- ============================-->
+
+	$('.nav a').bind('click',function(){
+		$("html, body").stop().animate({
+			scrollTop: $($(this).attr('href')).offset().top - 80
+		}, 1500, 'easeInOutExpo');
+		event.preventDefault();
+	});
+
+	<!-- ============================-->
+	<!-- =====  Banner Rotator   ====-->
+	<!-- ============================-->
+
+	$('#slides').superslides({
+		animation: "fade",
+		play: 10000,
+		slide_easing: 'easeInOutCubic',
+		slide_speed: 800,
+		pagination: true,
+		hashchange: false,
+		scrollable: true
+	});
+
 	<!-- ============================-->
 	<!-- ===== skillbar ====-->
 	<!-- ============================-->
@@ -61,6 +107,21 @@ $(document).ready(function(){
 
 
 	$('#owl-carousel-team').owlCarousel({
+		loop:true,
+		margin:10,
+		items:4,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
 		/*autoplay: 3000,*/
 		/*items:4,
 		 itemsDesktop: [1199,3],
@@ -74,6 +135,8 @@ $(document).ready(function(){
 		 responsiveBaseWidth: window*/
 	});
 
+    new WOW().init();
+
 });
 
 
@@ -85,7 +148,10 @@ $(document).ready(function(){
 jQuery(window).scroll(function (){
 	var top = jQuery(document).scrollTop();
 	var batas = jQuery(window).height();
-	if(top > batas){
+	var bottomOfDiv = $('.main-menu').position().top+$('.main-menu').outerHeight(true);
+	//alert('aise');
+	if(top > bottomOfDiv - 20){
+		//alert('top'+top)
 		jQuery('.main-menu').addClass('tiny');
 		jQuery('.main-menu').css('opacity','1');
 	}else{
